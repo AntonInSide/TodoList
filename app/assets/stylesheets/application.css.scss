@@ -26,12 +26,9 @@ html {
 
 body {
  	height: 100%;
-  background: -webkit-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:    -moz-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:     -ms-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:      -o-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:         linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  font-family: 'Lato', sans-serif;
+    background-color: rgba(252,238,186,1); 
+	background: @include filter-gradient(#fceeba, #fcda4f, vertical); 
+	background: @include background-image(linear-gradient(top, rgba(252,238,186,1) 0%, rgba(251,230,147,1) 36%, rgba(251,226,123,1) 41%, rgba(252,218,79,1) 50%, rgba(250,200,0,1) 100%));
 }
 
 .clearfix:before,
